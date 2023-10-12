@@ -1,7 +1,7 @@
 {
     "name": "axe-apca",
     "description": "Axe rules to check against APCA bronze and silver+ conformance levels.",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "type": "module",
     "exports": {
         ".": {
