@@ -24,8 +24,7 @@
         "test": "web-test-runner",
         "test:watch": "web-test-runner --watch",
         "version": "changeset version",
-        "prepublishOnly": "npm run build",
-        "publish": "changeset publish"
+        "publish": "npm run build && changeset publish"
     },
     "dependencies": {
         "apca-w3": "^0.1.9"
