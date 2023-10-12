@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "esnext",
+        "moduleResolution": "bundler",
+        "declaration": true,
+        "outDir": "./dist",
+    },
+    "include": ["src/**/*"],
+    "exclude": ["**/*.test.ts"]
+}

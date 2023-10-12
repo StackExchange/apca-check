@@ -1,0 +1,50 @@
+{
+    "name": "axe-apca",
+    "description": "Axe rules to check against APCA bronze and silver+ conformance levels.",
+    "version": "0.0.0",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StackExchange/axe-apca.git"
+    },
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint ./src",
+        "lint:fix": "eslint ./src --fix",
+        "test": "web-test-runner",
+        "test:watch": "web-test-runner --watch",
+        "prepublishOnly": "npm run build"
+    },
+    "dependencies": {
+        "apca-w3": "^0.1.9"
+    },
+    "peerDependencies": {
+        "axe-core": "^4.0.0"
+    },
+    "devDependencies": {
+        "@open-wc/testing": "^3.2.0",
+        "@rollup/plugin-commonjs": "^25.0.5",
+        "@types/apca-w3": "^0.1.1",
+        "@typescript-eslint/eslint-plugin": "^6.7.5",
+        "@typescript-eslint/parser": "^6.7.5",
+        "@web/dev-server-esbuild": "^0.4.1",
+        "@web/dev-server-rollup": "^0.5.2",
+        "@web/test-runner": "^0.16.1",
+        "@web/test-runner-playwright": "^0.10.1",
+        "eslint": "^8.51.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "prettier": "^3.0.3",
+        "typescript": "^5.1.6"
+    }
+}
