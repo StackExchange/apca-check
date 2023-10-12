@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v3
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      - name: 🏗 Install and Build
+        run: |
+          npm ci
+          npx playwright install --with-deps
+          npm run build
+
+      - name: ▶️ Linting
+        run: npm run lint
+
+      - name: ▶️ Testing
+        run: npm run test
+
+# cancel the jobs if another workflow is kicked off for the same branch
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
