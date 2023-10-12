@@ -23,7 +23,9 @@
         "lint:fix": "eslint ./src --fix",
         "test": "web-test-runner",
         "test:watch": "web-test-runner --watch",
-        "prepublishOnly": "npm run build"
+        "version": "changeset version",
+        "prepublishOnly": "npm run build",
+        "publish": "changeset publish"
     },
     "dependencies": {
         "apca-w3": "^0.1.9"
@@ -32,6 +34,8 @@
         "axe-core": "^4.0.0"
     },
     "devDependencies": {
+        "@changesets/changelog-github": "^0.4.8",
+        "@changesets/cli": "^2.26.2",
         "@open-wc/testing": "^3.2.0",
         "@rollup/plugin-commonjs": "^25.0.5",
         "@types/apca-w3": "^0.1.1",
