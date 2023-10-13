@@ -1,5 +1,11 @@
 # axe-apca
 
+## 0.0.3
+
+### Patch Changes
+
+-   [`42d5b12`](https://github.com/StackExchange/axe-apca/commit/42d5b12035bfea11c37346613e6f8d91225bb80f) Thanks [@giamir](https://github.com/giamir)! - Fix package.json metadata
+
 ## 0.0.2
 
 ### Patch Changes
