@@ -90,7 +90,7 @@ const generateColorContrastAPCAConformanceCheck = (
             bgColor: bgColor.toHexString(),
             fontSize: `${((parseFloat(fontSize) * 72) / 96).toFixed(
                 1,
-            )}pt (${fontSize}px)`,
+            )}pt (${parseFloat(fontSize)}px)`,
             fontWeight: fontWeight,
             apcaContrast: Math.round(apcaContrast * 100) / 100,
             apcaThreshold: apcaThreshold,
