@@ -1,5 +1,13 @@
 # axe-apca
 
+## 0.0.4
+
+### Patch Changes
+
+-   [`95e3a68`](https://github.com/StackExchange/axe-apca/commit/95e3a68c581d6c54e7ec8d54ba5a5534943665e7) Thanks [@giamir](https://github.com/giamir)! - Compile distribution files so that they are compatible with node.js versions supporting ecmascript modules
+
+-   [`1e300c6`](https://github.com/StackExchange/axe-apca/commit/1e300c64de3d67798d4ee3214da61a102d699cd3) Thanks [@giamir](https://github.com/giamir)! - Fix typo in rules messages
+
 ## 0.0.3
 
 ### Patch Changes
