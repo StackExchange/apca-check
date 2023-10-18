@@ -1,4 +1,4 @@
-import type { ConformanceThresholdFn } from ".";
+import type { ConformanceThresholdFn } from "./index.js";
 
 const silverPlusAPCALookupTable = [
     // See https://readtech.org/ARC/tests/visual-readability-contrast/?tn=criterion (May 22, 2022)

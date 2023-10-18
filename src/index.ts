@@ -1,7 +1,7 @@
 import { calcAPCA } from "apca-w3";
 import axe, { type Check, Rule } from "axe-core";
-import APCABronzeConformanceThresholdFn from "./apca-bronze";
-import APCASilverPlusConformanceThresholdFn from "./apca-silver-plus";
+import APCABronzeConformanceThresholdFn from "./apca-bronze.js";
+import APCASilverPlusConformanceThresholdFn from "./apca-silver-plus.js";
 
 type ConformanceLevel = "bronze" | "silver" | "custom";
 

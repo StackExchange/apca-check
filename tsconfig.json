@@ -2,7 +2,7 @@
     "compilerOptions": {
         "strict": true,
         "target": "esnext",
-        "moduleResolution": "bundler",
+        "module": "nodenext",
         "declaration": true,
         "outDir": "./dist",
     },
