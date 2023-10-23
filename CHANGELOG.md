@@ -1,5 +1,15 @@
 # apca-check
 
+## 0.1.0
+
+### Minor Changes
+
+-   [`a88c8f6`](https://github.com/StackExchange/apca-check/commit/a88c8f67b6f428af6a6280fcbae074eb47f668c0) Thanks [@giamir](https://github.com/giamir)! - Rename package to `apca-check` to comply with Deque Systems, Inc. request (https://github.com/StackExchange/axe-apca/issues/8).
+
+    BREAKING CHANGE: The [`axe-apca`](https://www.npmjs.com/package/axe-apca) package is now **deprecated**.
+    Please remove it from your dependencies and use [`apca-check`](https://www.npmjs.com/package/apca-check) instead.
+    For more information on installation and usage consult the [README.md](https://github.com/StackExchange/apca-check).
+
 ## 0.0.4
 
 ### Patch Changes
