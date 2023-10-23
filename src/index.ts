@@ -115,7 +115,7 @@ const generateColorContrastAPCARule = (conformanceLevel: string): Rule => ({
     tags: ["apca", "wcag3", `apca-${conformanceLevel}`],
 });
 
-const registerAxeAPCA = (
+const registerAPCACheck = (
     conformanceLevel: ConformanceLevel,
     customConformanceThresholdFn?: ConformanceThresholdFn,
 ) => {
@@ -146,4 +146,4 @@ const registerAxeAPCA = (
 };
 
 export type { ConformanceLevel, ConformanceThresholdFn };
-export default registerAxeAPCA;
+export default registerAPCACheck;

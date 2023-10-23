@@ -1,5 +1,5 @@
 {
-    "name": "axe-apca",
+    "name": "apca-check",
     "description": "Axe rules to check against APCA bronze and silver+ conformance levels.",
     "version": "0.0.4",
     "type": "module",
@@ -13,11 +13,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/StackExchange/axe-apca.git"
+        "url": "git+https://github.com/StackExchange/apca-check.git"
     },
     "license": "MIT",
     "files": [
         "dist"
+    ],
+    "keywords": [
+        "accessibility",
+        "a11y",
+        "axe",
+        "axe-core",
+        "apca"
     ],
     "scripts": {
         "build": "tsc",

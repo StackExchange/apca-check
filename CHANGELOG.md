@@ -1,27 +1,27 @@
-# axe-apca
+# apca-check
 
 ## 0.0.4
 
 ### Patch Changes
 
--   [`95e3a68`](https://github.com/StackExchange/axe-apca/commit/95e3a68c581d6c54e7ec8d54ba5a5534943665e7) Thanks [@giamir](https://github.com/giamir)! - Compile distribution files so that they are compatible with node.js versions supporting ecmascript modules
+-   [`95e3a68`](https://github.com/StackExchange/apca-check/commit/95e3a68c581d6c54e7ec8d54ba5a5534943665e7) Thanks [@giamir](https://github.com/giamir)! - Compile distribution files so that they are compatible with node.js versions supporting ecmascript modules
 
--   [`1e300c6`](https://github.com/StackExchange/axe-apca/commit/1e300c64de3d67798d4ee3214da61a102d699cd3) Thanks [@giamir](https://github.com/giamir)! - Fix typo in rules messages
+-   [`1e300c6`](https://github.com/StackExchange/apca-check/commit/1e300c64de3d67798d4ee3214da61a102d699cd3) Thanks [@giamir](https://github.com/giamir)! - Fix typo in rules messages
 
 ## 0.0.3
 
 ### Patch Changes
 
--   [`42d5b12`](https://github.com/StackExchange/axe-apca/commit/42d5b12035bfea11c37346613e6f8d91225bb80f) Thanks [@giamir](https://github.com/giamir)! - Fix package.json metadata
+-   [`42d5b12`](https://github.com/StackExchange/apca-check/commit/42d5b12035bfea11c37346613e6f8d91225bb80f) Thanks [@giamir](https://github.com/giamir)! - Fix package.json metadata
 
 ## 0.0.2
 
 ### Patch Changes
 
--   [`ccf1e94`](https://github.com/StackExchange/axe-apca/commit/ccf1e94bc1c8c231667fd84d943b2065cf6283fb) Thanks [@giamir](https://github.com/giamir)! - Typescript support for moduleResolution < node16
+-   [`ccf1e94`](https://github.com/StackExchange/apca-check/commit/ccf1e94bc1c8c231667fd84d943b2065cf6283fb) Thanks [@giamir](https://github.com/giamir)! - Typescript support for moduleResolution < node16
 
 ## 0.0.1
 
 ### Patch Changes
 
--   [`7728604`](https://github.com/StackExchange/axe-apca/commit/7728604acb78e886ce4b7989a1cf916354c167b2) Thanks [@giamir](https://github.com/giamir)! - Initial release
+-   [`7728604`](https://github.com/StackExchange/apca-check/commit/7728604acb78e886ce4b7989a1cf916354c167b2) Thanks [@giamir](https://github.com/giamir)! - Initial release

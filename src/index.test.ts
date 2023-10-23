@@ -1,7 +1,7 @@
 import { html, fixture, expect } from "@open-wc/testing";
 import axe from "axe-core";
 import type { AxeResults } from "axe-core";
-import registerAxeAPCA from ".";
+import registerAPCACheck from ".";
 
 const runAxe = async (el: HTMLElement): Promise<AxeResults> => {
     return new Promise((resolve, reject) => {
@@ -12,7 +12,7 @@ const runAxe = async (el: HTMLElement): Promise<AxeResults> => {
     });
 };
 
-describe("axe-apca", () => {
+describe("apca-check", () => {
     describe("custom conformance level", () => {
         beforeEach(() => {
             const customConformanceThresholdFn = (
@@ -21,12 +21,12 @@ describe("axe-apca", () => {
                 return parseFloat(fontSize) >= 32 ? 45 : 60;
             };
 
-            registerAxeAPCA("custom", customConformanceThresholdFn);
+            registerAPCACheck("custom", customConformanceThresholdFn);
         });
 
         it("should throw an error if no custom conformance threshold function is provided", () => {
             expect(() => {
-                registerAxeAPCA("custom");
+                registerAPCACheck("custom");
             }).to.throw(
                 "A custom conformance level requires a custom conformance threshold function",
             );
@@ -99,7 +99,7 @@ describe("axe-apca", () => {
 
     describe("bronze conformance level", () => {
         beforeEach(() => {
-            registerAxeAPCA("bronze");
+            registerAPCACheck("bronze");
         });
 
         it("should check for APCA accessibility contrast violations", async () => {
@@ -169,7 +169,7 @@ describe("axe-apca", () => {
 
     describe("silver conformance level", () => {
         beforeEach(() => {
-            registerAxeAPCA("silver");
+            registerAPCACheck("silver");
         });
 
         it("should check for APCA accessibility contrast violations", async () => {

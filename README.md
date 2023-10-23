@@ -1,4 +1,4 @@
-# axe-apca
+# apca-check
 
 [![ci status][gh-action-badge]][gh-action-url] [![npm version][npm-badge]][npm-url]
 
@@ -9,16 +9,16 @@ This package contains custom axe rules and checks for [APCA](https://readtech.or
 ### Installation
 
 ```bash
-npm install --save-dev axe-core axe-apca
+npm install --save-dev axe-core apca-check
 ```
 
 ### Setup
 
 ```js
 import axe from "axe-core";
-import { registerAxeAPCA } from 'axe-apca';
+import { registerAPCACheck } from 'apca-check';
 
-registerAxeAPCA('bronze'); // or registerAxeAPCA('silver');
+registerAPCACheck('bronze'); // or registerAPCACheck('silver');
 
  // consider turning off default WCAG 2.2 AA color contrast rules when using APCA
 axe.configure({
@@ -35,7 +35,7 @@ axe.run(document, (err, results) => {
 
 To set custom thresholds for APCA checks, follow these steps:
 
-1. Use `custom` as the first argument when calling `registerAxeAPCA`.
+1. Use `custom` as the first argument when calling `registerAPCACheck`.
 1. Provide a function as the second argument, optionally accepting `fontSize` and `fontWeight` arguments.
 
 
@@ -47,7 +47,7 @@ const customConformanceThresholdFn = (fontSize, fontWeight) => {
     return size >= 32 || weight > 700 ? 45 : 60;
 };
 
-registerAxeAPCA('custom', customConformanceThresholdFn);
+registerAPCACheck('custom', customConformanceThresholdFn);
 ```
 
 ## Development
@@ -85,7 +85,7 @@ We use [changesets](https://github.com/changesets/changesets) to automatize the 
 
 - Every time you do work that requires a new release to be published, [add a changesets entry](https://github.com/changesets/changesets/blob/main/docs/adding-a-changeset.md) by running `npx chageset` and follow the instrcutions on screen. (changes that do not require a new release - e.g. changing a test file - don't need a changeset).
   - When opening a PR without a corresponding changeset the [changesets-bot](https://github.com/apps/changeset-bot) will remind you to do so. It generally makes sense to have one changeset for PR (if the PR changes do not require a new release to be published the bot message can be safely ignored)
-- The [release github workflow](.github/workflows/release.yml) continuosly check if there are new pending changesets in the main branch, if there are it creates a GH PR (`chore(release)` [see example](https://github.com/StackExchange/axe-apca/pull/2)) and continue updating it as more changesets are potentially pushed/merged to the main branch.
+- The [release github workflow](.github/workflows/release.yml) continuosly check if there are new pending changesets in the main branch, if there are it creates a GH PR (`chore(release)` [see example](https://github.com/StackExchange/apca-check/pull/2)) and continue updating it as more changesets are potentially pushed/merged to the main branch.
 - When we are ready to cut a release we need to simply merge the `chore(release)` PR back to main and the release github workflow will take care of publishing the changes to NPM and create a GH release for us. The `chore(release)` PR also give us an opportunity to adjust the automatically generated changelog when necessary (the entry in the changelog file is also what will end up in the GH release notes).
 
 _The release github workflow only run if the CI workflow (running linter, formatter and tests) is successful: CI is blocking accidental releases_.
@@ -94,8 +94,10 @@ _Despite using changesets to communicate the intent of creating releases in a mo
 
 ## License
 Copyright 2023 Stack Exchange, Inc and released under the [MIT License](/LICENSE.MD).
+`axe-core®` and `axe®` are a trademark of Deque Systems, Inc. in the US and other countries.
 
-[gh-action-url]: https://github.com/StackExchange/axe-apca/actions/workflows/CI.yml
-[gh-action-badge]: https://github.com/StackExchange/axe-apca/actions/workflows/CI.yml/badge.svg?branch=main
-[npm-url]: https://npmjs.org/package/axe-apca
-[npm-badge]: https://img.shields.io/npm/v/axe-apca.svg
+
+[gh-action-url]: https://github.com/StackExchange/apca-check/actions/workflows/CI.yml
+[gh-action-badge]: https://github.com/StackExchange/apca-check/actions/workflows/CI.yml/badge.svg?branch=main
+[npm-url]: https://npmjs.org/package/apca-check
+[npm-badge]: https://img.shields.io/npm/v/apca-check.svg
