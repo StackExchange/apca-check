@@ -52,7 +52,7 @@
         "@web/dev-server-rollup": "^0.5.4",
         "@web/test-runner": "^0.17.2",
         "@web/test-runner-playwright": "^0.11.0",
-        "eslint": "^8.52.0",
+        "eslint": "^8.53.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-prettier": "^5.0.1",
         "prettier": "^3.0.3",
