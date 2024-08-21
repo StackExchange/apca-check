@@ -30,8 +30,9 @@ const APCASilverPlusConformanceThresholdFn: ConformanceThresholdFn = (
     // Go over the table backwards to find the first matching font size and then the weight.
     // The value null is returned when the combination of font size and weight does not have
     // any elegible APCA luminosity silver compliant thresholds (represented by -1 in the table).
-    silverPlusAPCALookupTable.reverse();
-    for (const [rowSize, ...rowWeights] of silverPlusAPCALookupTable) {
+    const reversedTable = [...silverPlusAPCALookupTable].reverse();
+
+    for (const [rowSize, ...rowWeights] of reversedTable) {
         if (size >= rowSize) {
             for (const [idx, keywordWeight] of [
                 900, 800, 700, 600, 500, 400, 300, 200, 100,
