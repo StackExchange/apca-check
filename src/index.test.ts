@@ -235,5 +235,22 @@ describe("apca-check", () => {
 
             await expect(apcaViolations[0].nodes.length).to.equal(3);
         });
+
+        it("should handle both valid code and violations", async () => {
+            const el: HTMLElement = await fixture(
+                html`<div style="background: white; color: black;">
+                    <p style="font-size: 12px; font-weight: 400;">Some copy</p>
+                    <p style="font-size: 16px; font-weight: 600;">Some copy</p>
+                </div>`,
+            );
+
+            const results = await runAxe(el);
+
+            const apcaViolations = results.violations.filter((violation) =>
+                violation.id.includes("color-contrast-apca-silver"),
+            );
+
+            await expect(apcaViolations[0].nodes.length).to.equal(1);
+        });
     });
 });
