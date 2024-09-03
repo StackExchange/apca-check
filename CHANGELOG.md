@@ -1,5 +1,11 @@
 # apca-check
 
+## 0.1.1
+
+### Patch Changes
+
+-   [#132](https://github.com/StackExchange/apca-check/pull/132) [`90ca26a`](https://github.com/StackExchange/apca-check/commit/90ca26ac7f5fd93ad61d4184936ba7d13440417d) Thanks [@MatteoPieroni](https://github.com/MatteoPieroni)! - fix: bug with array reversal
+
 ## 0.1.0
 
 ### Minor Changes
