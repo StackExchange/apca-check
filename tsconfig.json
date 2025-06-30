@@ -4,6 +4,7 @@
         "target": "esnext",
         "module": "nodenext",
         "declaration": true,
+        "skipLibCheck": true,
         "outDir": "./dist",
     },
     "include": ["src/**/*"],

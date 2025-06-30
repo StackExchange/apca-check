@@ -13,5 +13,10 @@ export default {
         playwrightLauncher({ product: "webkit" }),
     ],
     nodeResolve: { browser: true },
-    plugins: [commonjs(), esbuildPlugin({ ts: true })],
+    plugins: [
+        commonjs({
+            strictRequires: "auto",
+        }),
+        esbuildPlugin({ ts: true }),
+    ],
 };
