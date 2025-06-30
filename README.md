@@ -16,7 +16,7 @@ npm install --save-dev axe-core apca-check
 
 ```js
 import axe from "axe-core";
-import { registerAPCACheck } from 'apca-check';
+import registerAPCACheck from 'apca-check';
 
 registerAPCACheck('bronze'); // or registerAPCACheck('silver');
 
